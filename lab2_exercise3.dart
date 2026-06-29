@@ -8,31 +8,31 @@ void main() {
 
   // Add
   subjects.add('Music');
-  print('Subjects : $subjects');
+  print('Updated subjects: $subjects');
 
-  // Map Subjects Score
+  // Define Map Subjects Score
   Map<String, int> subjectScores = {
     'Math': 90,
     'Science': 60,
     'History': 40,
     'English': 35,
     'Art': 32,
-    'Music': 95
   };
 
-  print('Math score: ${subjectScores['Math']}');
+  print('Score for Math: ${subjectScores['Math']}');
 
-  subjectScores['Sports'] = 55;
+  subjectScores['Music'] = 55;
+  print('Updated subjects and scores: $subjectScores');
 
-  print('Subjects and scores: $subjectScores');
-
+  print('รายวิชาที่มีตัวอักษร "a" :');
   subjectScores.forEach((subjects, score) {
     if (subjects.contains('a') || subjects.contains('A')) {
-      print('$subjects');
+      print('$subjects: $score');
     }
   });
 
   // Print Subjects with Score more than 50
+  print('รายวิชาที่มีคะแนนมากกว่า 50 :');
   subjectScores.forEach((subject, score) {
     if (score > 50) {
       print('$subject: $score');
