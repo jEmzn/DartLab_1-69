@@ -9,8 +9,8 @@ void main() {
   print('Middle Name: $middleName');
 
   middleName??= 'N/A';
-  print('Middle Name: $middleName');
+  print('Middle Name after set init null value: $middleName');
 
   middleName??= 'Trying to assign a new value';
-  print('Middle Name: $middleName');
+  print('Middle Name after trying to assign a new value: $middleName');
 }
