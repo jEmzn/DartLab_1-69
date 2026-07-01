@@ -1,6 +1,5 @@
 String say(String from, String msg, [String? device]) {
-  var deviceText = device != null ? ' result with a $device' : '';
-  return '$from says $msg$deviceText';
+  return '$from says $msg${device != null ? ' with a $device' : ''}';
 }
 
 void main() {
