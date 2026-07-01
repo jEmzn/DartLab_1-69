@@ -6,7 +6,11 @@ void main() {
   
   print('City length: ${city.length}');
 
-  middleName??= 'N/A';
+  print('Middle Name: $middleName');
 
+  middleName??= 'N/A';
+  print('Middle Name: $middleName');
+
+  middleName??= 'Trying to assign a new value';
   print('Middle Name: $middleName');
 }
