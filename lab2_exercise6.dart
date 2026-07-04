@@ -17,12 +17,12 @@ double cylinderVolume(double radius, double height) {
 
 
 void main() {
-    double area1 = triangleArea(5, 10);
-    print("Area of triangle (base: 5, height: 10): $area1");
+    double triArea = triangleArea(5.2, 10.3);
+    print("Area of triangle (base: 5.2, height: 10.3): $triArea");
 
-    double area2 = rectangleArea(5, 10);
-    print("Area of rectangle (length: 5, width: 10): $area2");
+    double recArea = rectangleArea(4.3, 9.2);
+    print("Area of rectangle (length: 4.3, width: 9.2): $recArea");
 
-    double volume = cylinderVolume(5, 10);
-    print("Volume of cylinder (radius: 5, height: 10): $volume");
+    double cylVolume = cylinderVolume(4.4, 7.5);
+    print("Volume of cylinder (radius: 4.4, height: 7.5): $cylVolume");
 }
